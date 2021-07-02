@@ -1,0 +1,7 @@
+select * from HAYAT
+where ogretim IN ('SQL', 'PYTHON', 'NUMPY' 'SEABORN', ) AND egitim IN ('AHLAK', 'CALISMA', 'GAYRET',  )  
+
+execute
+ahlaki kazanım
+maddi kazanım
+toplumsal kazanım
