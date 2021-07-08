@@ -1,0 +1,7 @@
+Aynı tablo içindeki veriyi kopyalamak için kullanılır. 
+Dikkat edilmelidir. BİRİNCİ ALAN BOŞ OLAN VERİLERİN KOPYALANACAĞI ALANDIR, 
+İKİNCİ ALAN DOLU ALANDIR, VERİNİN ÇEKİLECEĞİ ALANDIR. 
+
+
+
+UPDATE DataAnalystOLD set Job_Title1 = Job_Title;
