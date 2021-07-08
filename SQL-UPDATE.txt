@@ -1,6 +1,0 @@
-UPDATE DataAnalyst (Tablo Adı)
-
-SET industry = 'NAN' (YENİ DEĞER)
-
-
-WHERE industry ='-1'; (ESKİ DEĞER)
