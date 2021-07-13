@@ -2,3 +2,43 @@
 
 UPDATE houses_ist2 
 SET il ='istanbul';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dene, Yanýl, Öðren
+
