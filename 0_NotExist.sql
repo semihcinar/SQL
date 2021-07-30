@@ -9,3 +9,6 @@ WHERE	 NOT EXISTS 		(
 							AND		A.product_name = 'Trek Remedy 9.8 - 2017'
 							AND		X.state = D.state
 							)
+
+
+--Notexist
