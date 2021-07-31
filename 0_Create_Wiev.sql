@@ -1,3 +1,6 @@
+-- WÝEW Oluþturma ve kullanma
+
+
 CREATE VIEW SUMMARY_VIW AS
 SELECT	first_name, last_name, order_date, product_name, model_year,
 		quantity, list_price, final_price
