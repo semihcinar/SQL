@@ -61,6 +61,13 @@ AND b.Ship_id = e.Ship_id
 --Use "MAX" or "TOP"
 
 
+select top (10) * , DATEDIFF (day,C.Order_Date, E.Ship_Date) GUNFARKI
+from cust_dimen A, market_fact B, orders_dimen C, prod_dimen D, shipping_dimen E
+where b.Cust_id = a.Cust_id
+AND b.Ord_id  = c.Ord_id
+AND b.Prod_id = d.Prod_id
+AND b.Ship_id = e.Ship_id
+ORDER BY GUNFARKI DESC
 
 
 --////////////////////////////////
