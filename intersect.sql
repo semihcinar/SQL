@@ -1,4 +1,7 @@
 -- INTERSECT --
+-- iki farklý SQL sorgusundaki KESÝÞÝM kayýtylarýný getirir. A ve B kümelerindeki ortak kayýtlarý gösterir.
+
+
 
 SELECT	A.customer_id, A.first_name, A.last_name
 FROM	sales.customers A, sales.orders B
