@@ -1,3 +1,6 @@
+
+
+
 UPDATE DataAnalyst (Tablo Adý)
 
 SET industry = 'NAN' (YENÝ DEÐER)
