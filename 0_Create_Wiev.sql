@@ -1,4 +1,4 @@
--- WÝEW Oluþturma ve kullanma
+-- WÝEW Oluþturma ve kullanma 
 
 
 CREATE VIEW SUMMARY_VIW AS
