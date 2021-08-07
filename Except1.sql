@@ -1,4 +1,4 @@
--- EXCEPT 
+-- EXCEPT  çalýþmasý
 
 -- iki farklý kümedeki birinde olup diðerinde olmayan kayýtlarý listeler. 
 
