@@ -1,4 +1,4 @@
--- SQL UPDATE
+-- SQL UPDATE Güncelleme
 
 
 UPDATE DataAnalyst (Tablo Adý)
