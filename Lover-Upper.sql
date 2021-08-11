@@ -1,0 +1,7 @@
+--LOWER
+
+SELECT LOWER ('CHARACTER')
+
+--UPPER
+
+SELECT UPPER ('character')
