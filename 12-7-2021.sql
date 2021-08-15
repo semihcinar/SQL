@@ -1,3 +1,6 @@
+--code
+
+
 select top 10 * from production.products AS a
 inner join production.categories AS b
 on a.category_id =b.category_id
