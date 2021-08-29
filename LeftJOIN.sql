@@ -1,4 +1,4 @@
---Left JOIN
+--Left JOIN Yapalým
 
 
 SELECT
