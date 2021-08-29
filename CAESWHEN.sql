@@ -1,4 +1,4 @@
---CASE WHEN
+--CASE WHEN yapalým
 
 --Find the total amount of each order which are placed in 2018. Then categorize them according to limits stated below.
 --(You can use case statements here)
