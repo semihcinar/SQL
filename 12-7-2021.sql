@@ -1,4 +1,4 @@
---code
+--code örnekleri
 
 
 select top 10 * from production.products AS a
