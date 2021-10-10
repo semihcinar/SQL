@@ -1,14 +1,19 @@
 
-use test
+use outoscout	
 
+UPDATE Query
 
-UPDATE jasonOKK
---SET HorsePower = '70' 
+SET Gears2= '7',
+Fuel ='Diesel',
+Displacement ='1598',
+Weight='1230',
+Cylinders='4',
+HP_KW= '85',
 
-SET Model_Code= '0035/BFG'
+CO2_Emission ='106',
+Drive_chain ='front',
+Emission_Class ='Euro 6',
+Nr_of_Seats ='5',
+Nr_of_Doors ='3'
 
-where ID IN  
-
-(
-11163
-)
+WHERE        ModelCodeOrj = '0588/AZD' AND GearType = 'Automatic'
