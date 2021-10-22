@@ -1,21 +1,24 @@
 use test
 
 
-
-UPDATE 
-    jasonOKK
-SET
-   -- CO2_Emission= REPLACE(CO2_Emission, '[''\n','')
+--  REPLACE
+UPDATE     jason
+--SET	Body_Color_Original  = REPLACE(Body_Color_Original, '[''\n','') 
+SET Body_Color_Original  = REPLACE(Body_Color_Original, '\n'']','') 
 	
---	CO2_Emission= REPLACE(CO2_Emission, '\n'']','')
-
-	CO2_Emission  = REPLACE(CO2_Emission, '[[], [], []]','')
-	--WHERE
-   -- ID ='249';
-
-
-
-
-select Model_Code 
+select Body_Color_Original 
 from
-jasonOKK
+jason
+
+
+-- UPPER
+SELECT UPPER (Body_Color_Original) 
+from
+jason
+
+
+SELECT SUBSTRING ('CHARACTER', 0, 5)
+
+
+
+select  SUBSTRING (Consumption, 4, 12)     from jason
