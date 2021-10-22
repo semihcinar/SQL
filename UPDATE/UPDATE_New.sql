@@ -17,3 +17,19 @@ Nr_of_Seats ='5',
 Nr_of_Doors ='3'
 
 WHERE        ModelCodeOrj = '0588/AZD' AND GearType = 'Automatic'
+
+
+
+INSERT INTO jason (Consumption_con)
+SELECT Consumption
+FROM jason
+
+
+
+INSERT INTO jason.Consumption_con
+SELECT Consumption
+FROM jason
+
+
+
+
