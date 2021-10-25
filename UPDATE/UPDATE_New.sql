@@ -33,3 +33,20 @@ FROM jason
 
 
 
+
+
+
+
+
+WHERE        ModelCodeOrj = '0588/AZD' AND GearType = 'Automatic'
+
+
+
+
+
+
+
+
+SELECT        Musteri.CUSTOMER_ID AS Expr1, Marka.CUSTOMER_ID, Musteri.BASE_CUSTOMER_ID
+FROM            Marka INNER JOIN
+                         Musteri ON Marka.CUSTOMER_ID = Musteri.CUSTOMER_ID
