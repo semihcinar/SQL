@@ -1,8 +1,25 @@
 --TABLODA YER ALAN BÝR STUN ÝÇÝNE AYNI BÝLGÝYÝ YAZMAK ÝÇÝN update KOMUTUNU KUYLLANIYORUZ. TABLO ADI (houses_ist2) STUN ADI (il) ÝL ALANINA GÝRÝLEN VERÝ (ÝSTANBUL) 
 
-UPDATE Cleaned_segmentation_V4_Score
-SET Monetary_Score ='4'
-where MonetaryR > 1571.28;
+
+UPDATE  product.product
+SET list_price ='999'
+where list_price IN (970,980,985,999) 
+
+
+
+
+
+
+UPDATE  sale.order_item
+SET list_price ='4'
+where product_id IN (
+
+
+						SELECT  product_id
+						FROM            sale.order_item
+
+
+					);
 
 
 
@@ -27,7 +44,8 @@ where product_name like '%COSORI CO108%' AND product.brand_id=1 AND product.cate
 
 
 
-
+SELECT  product_id
+FROM            sale.order_item
 
 
 
