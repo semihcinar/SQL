@@ -1,9 +1,21 @@
 --TABLODA YER ALAN BÝR STUN ÝÇÝNE AYNI BÝLGÝYÝ YAZMAK ÝÇÝN update KOMUTUNU KUYLLANIYORUZ. TABLO ADI (houses_ist2) STUN ADI (il) ÝL ALANINA GÝRÝLEN VERÝ (ÝSTANBUL) 
 
 
-UPDATE  product.product
-SET list_price ='999'
-where list_price IN (970,980,985,999) 
+UPDATE  customer
+SET phone = NULL
+WHERE        (phone = N'')
+
+
+
+
+SELECT       customer_id, first_name, last_name, street, city, state, zip, phone, email
+FROM            customer
+WHERE        (phone = N'')
+
+
+
+
+
 
 
 
@@ -59,19 +71,4 @@ FROM            sale.order_item
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Dene, Yanýl, Öðren
 
