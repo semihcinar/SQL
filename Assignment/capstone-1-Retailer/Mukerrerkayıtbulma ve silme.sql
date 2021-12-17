@@ -23,7 +23,7 @@ Having Count (CustomerId) > 1
 iki veya daha fazla kayýtlarý tespit edip sayýsýný gösterir
 
 Select  CustomerID as CustomerID, Count(CustomerID) as ADET, StockCode , InvoiceDate, InvoiceNo, Country, UnitPrice, Quantity, Description
-From OnlineRetailaaaaa
+From customer
 Group By CustomerID, StockCode, InvoiceDate, InvoiceNo, Country, UnitPrice, Quantity, Description
 Having Count (CustomerID) > 5
 --------------------------------------------------------------------------------------------------------------------------------------
