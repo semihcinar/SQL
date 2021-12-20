@@ -38,7 +38,7 @@ select   RIGHT (email, LEN(email) - (CHARINDEX('@', email))) as eposta, customer
 select   RIGHT (email, LEN(email) - (CHARINDEX('@', email))) as eposta,* from customer
 
 
-where email not like '%yahoo%' AND email not like '%gmail%' AND email not like '%hotmail%' AND email not like '%aol%' AND email not like '%msn%' AND email not like '%cox.net%' AND email not like '%outlook%'
+where email like '%yahoo%' AND email not like '%gmail%' AND email not like '%hotmail%' AND email not like '%aol%' AND email not like '%msn%' AND email not like '%cox.net%' AND email not like '%outlook%'
 
 
 
