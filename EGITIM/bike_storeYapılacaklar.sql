@@ -1,0 +1,21 @@
+-- MARKALAR
+	--Marka istatistiði
+	--markalarýn statelere göre satýþý
+	--markalarýn city lere göre istatistiði
+	-- satelere göre ürün kateggorileri
+-- KATEGORY
+	-- en çok satan kategoriler
+	-- en çok satan ürünler
+	-- 
+--indirim
+	--en çok inidirim alan ürüler
+-- gönderi tarihi
+	-- ürünün paketleme ve kargo gün sayýsý
+-- staff performansý
+	--aylýk ortalama ürün satýþý
+
+
+	-- 1 ürünlerle rapor
+	-- 2 personel ile ilgili rapor
+	-- 3 state ve city bazýnda rapor
+	-- 4 
