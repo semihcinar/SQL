@@ -1,0 +1,1 @@
+SELECT * FROM SYS.dm_exec_procedure_stats
