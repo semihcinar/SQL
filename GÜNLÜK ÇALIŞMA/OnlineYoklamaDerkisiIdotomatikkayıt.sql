@@ -1,0 +1,25 @@
+-- RANDOM kisi tablosu oluþturma
+
+DECLARE @I AS INT=0
+WHILE @I < 500
+BEGIN
+
+
+DECLARE @KISIID AS INT
+DECLARE @DERSID AS INT
+DECLARE @BOLUMID AS INT
+
+
+SELECT @KISIID= kisiID FROM kisi WHERE kisiID =ROUND(RAND() * 200,0)
+SELECT @DERSID=dersID, @BOLUMID = bolumadi FROM tablo_Ders WHERE dersID =ROUND(RAND() * 250,0)
+
+INSERT INTO ORTAK_kisi_ders (kisiID, dersID) VALUES (@KISIID, @DERSID)
+SET @I=@I+1
+
+END
+
+
+
+
+
+select RAND()
