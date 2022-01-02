@@ -10,3 +10,6 @@ END
 SELECT TOP 1000 *, DBO.CALCULATE_AGE(birthdate) AS YAS
 
 FROM customer
+
+
+
