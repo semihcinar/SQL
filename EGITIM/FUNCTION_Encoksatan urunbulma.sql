@@ -14,8 +14,8 @@ END
 
 
 select  dbo.COKSATAN()
-
-CREATE FUNCTION dbo.URUNBUL(@product_id INT)
+------------------------------------------------------------------------------
+ALTER FUNCTION dbo.URUNBUL(@product_id INT)
 RETURNS varchar(100)
 AS
 BEGIN
@@ -24,3 +24,7 @@ set @urunadi = (SELECT product_name FROM product.product WHERE (product_id = @pr
 RETURN @urunadi
 
 END
+
+select dbo.URUNBUL(6)
+---------------------------------------------------------------------
+--Ýki fonksiyon ürün ismini getiriyor
