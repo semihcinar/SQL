@@ -1,11 +1,19 @@
 EXEC msdb.dbo.sp_send_dbmail  
-    @profile_name = 'Adventure Works Administrator',  
-    @recipients = 'yourfriend@Adventure-Works.com',  
+    @profile_name = 'Semihcinarcomtr',  
+    @recipients = 'semihcinar@gmail.com',  
 
 
 
-    @query = 'SELECT COUNT(*) FROM AdventureWorks2012.Production.WorkOrder  
-                  WHERE DueDate > ''2004-04-30''  
-                  AND  DATEDIFF(dd, ''2004-04-30'', DueDate) < 2' ,  
-    @subject = 'Work Order Count',  
+ @query = 'SELECT        TOP (100) product.product.product_id, product.product.product_name, product.product.brand_id, product.product.category_id, product.product.model_year, product.product.list_price, product.stock.quantity FROM product.product INNER JOIN  product.stock ON product.product.product_id = product.stock.product_id WHERE        (product.stock.quantity < 5)' ,  
+ 
+ 
+ @subject = 'Work Order Count',  
     @attach_query_result_as_file = 1 ; 
+
+
+
+	EXEC msdb.dbo.sp_send_dbmail  
+    @profile_name = 'ekspercin',  
+    @recipients = 'semihcinar@gmail.com',  
+    @query = 'SELECT  top(10)  * from product.product',  
+    @attach_query_result_as_file = 1 ;  
