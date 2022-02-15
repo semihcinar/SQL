@@ -1,0 +1,1 @@
+      CREATE UNIQUE INDEX tweetindex ON Tweet_import (id_str)
