@@ -1,22 +1,31 @@
 
-Select  brand, name
-From product1
-Group By brand, name 
-Having Count (ID) >1
+delete from Tweet_import
+where id_str IN (
 
+
+Select  id_str
+From Tweet_import
+Group By id_str
+Having Count (id_str) >1
+)
 
 select * from product1
 
 
 
 
-DELETE FROM Data
-WHERE ID NOT IN
+DELETE FROM Tweet_import
+WHERE id_str NOT IN
 (
-	SELECT MAX(ID)
-		From Data
-		Group By prices_currency, brand, manufacturer, name);
+	SELECT MAX(id_str)
+		From Tweet_import
+		Group By id_str
+		);
 
+
+
+
+select count(id) from Tweet_import
 
 
 
@@ -49,16 +58,16 @@ select * from Data
 
 
 
-DELETE FROM creditcard
-WHERE id NOT IN
+DELETE FROM Tweet_import
+WHERE id_str NOT IN
 (
-	SELECT MAX(id)
-		From creditcard
-		Group By Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16, V17, V18, V19, V20, V21, V22, V23, V24, V25, V26, V27, V28, Amount, Class
+	SELECT MAX(id_str)
+		From Tweet_import
+		Group By [id_str], [from_user], [text], [created_at], [time], [geo_coordinates], [user_lang], [in_reply_to_user_id_str], [in_reply_to_screen_name], [from_user_id_str], [in_reply_to_status_id_str], [source], [profile_image_url], [user_followers_count]
 );
 
 
-
+select count (*) from Tweet_import
 
 
 delete from Data
