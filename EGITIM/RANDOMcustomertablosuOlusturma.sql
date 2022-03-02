@@ -1,7 +1,7 @@
 -- RANDOM kisi tablosu oluþturma
 
 DECLARE @I AS INT=0
-WHILE @I < 2000
+WHILE @I < 10000
 BEGIN
 
 
@@ -44,7 +44,47 @@ SET @YASGRUBU ='YAÞLI'
 
 
 
-INSERT INTO KISILER (AD, SOYISIM, DOGUMTARIHI, YAS, YASGRUBU,EPOSTA, STATENAME, CITY, STREET, ZIP, PHONE) VALUES (@AD, @SOYAD, @DOGUMTARIHI, @YAS, @YASGRUBU, @EPOSTAT, @STATE, @CITY, @STREET,@ZIP, @PHONE)
+INSERT INTO #KISILER (AD, SOYISIM, DOGUMTARIHI, YAS, YASGRUBU,EPOSTA, STATENAME, CITY, STREET, ZIP, PHONE) VALUES (@AD, @SOYAD, @DOGUMTARIHI, @YAS, @YASGRUBU, @EPOSTAT, @STATE, @CITY, @STREET,@ZIP, @PHONE)
 SET @I=@I+1
 
 END
+
+
+
+
+create table #KISILER (AD varchar(30), SOYISIM varchar(30), DOGUMTARIHI date, YAS int, YASGRUBU varchar(30), EPOSTA varchar(30), 
+STATENAME varchar(30), CITY varchar(30), STREET varchar(30), ZIP varchar(30), PHONE int)
+
+alter table KISILER add id int identity(1,1)
+
+SET STATISTICS TIME ON
+SET STATISTICS IO ON 
+--use tempdb
+select  * from KISILER
+--order by id desc
+--where AD like '%ad%'
+where AD='Jade' AND SOYISIM='Eanes' and 
+eposta='JadeEanes@amazon.com'
+
+
+select count (*) from KISILER
+sp_spaceused KISILER
+
+select 23802 *8 / 1024
+select 4 *8 / 1024
+
+create INDEX IX3 on  [dbo].[KISILER] ([id])
+INCLUDE ([AD],[SOYISIM])
+
+DROP INDEX [dbo].[KISILER].[PK_KISILER]
+
+
+
+
+--kendi içinden kayýt ekler
+
+insert into KISILER 
+([AD], [SOYISIM], [DOGUMTARIHI], [YAS], [YASGRUBU], [EPOSTA], [STATENAME], [CITY], [STREET], [ZIP], [PHONE])
+
+select top 1000 [AD], [SOYISIM], [DOGUMTARIHI], [YAS], [YASGRUBU], [EPOSTA], [STATENAME], [CITY], [STREET], [ZIP], [PHONE]
+from KISILER
