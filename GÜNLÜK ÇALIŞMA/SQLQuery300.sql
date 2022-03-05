@@ -1,0 +1,27 @@
+CREATE DATABASE DENEME
+ USE DENEME
+ CREATE SCHEMA A
+ CREATE SCHEMA B
+ CREATE SCHEMA C
+ CREATE TABLE A
+ (
+ [A_ID][INT]PRIMARY KEY NOT NULL,
+ [A_name][nvarchar](50) not null
+ );
+ CREATE TABLE B
+ (
+ [B_ID][INT]PRIMARY KEY NOT NULL,
+ [B_name][nvarchar](50) NOT NULL
+ );
+ CREATE TABLE C
+ (
+ [C_ID][INT] PRIMARY KEY NOT NULL,
+ [C_name][nvarchar](50) NOT NULL
+ );
+
+  CREATE TABLE A.C
+ (
+ [A_ID] [INT],
+ [C_ID][INT]
+
+ );
